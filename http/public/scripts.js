@@ -33,7 +33,8 @@ form.addEventListener("submit", (event) => {
     if (!value) 
         return alert('Preencha o campo')
 
-    const [name, url] = value.split(",")
+    const [name, urlTemp] = value.split(",")
+    const url = urlTemp.trim()
 
     if (!url) 
         return alert('formate o texto da maneira correta')
